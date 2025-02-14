@@ -13,39 +13,72 @@
             padding: 150px 0; 
             text-align: center; 
         }
-        .hero h1 { font-size: 60px; font-weight: bold; }
-        .hero p { font-size: 24px; }
-        .navbar-nav .nav-link { font-size: 18px; font-weight: bold; }
+        .hero h1 { font-size: 3rem; font-weight: bold; }
+        .hero p { font-size: 1.5rem; }
+        .nav-custom { background: rgba(0, 0, 0, 0.8); padding: 15px 0; text-align: center; }
+        .nav-custom a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.2rem; }
+        .nav-custom a:hover { text-decoration: underline; }
+        .icon { font-size: 50px; color: #0056b3; }
+        .map-container { height: 300px; }
     </style>
 </head>
 <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Silva & Asociados</a>
+            <a class="navbar-brand" href="#">Silva & Asociados</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="especialidades.html">ESPECIALIDADES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="abogados.html">ABOGADOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="abogados.html">Abogados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!-- Hero Section -->
     <section class="hero">
         <h1>SILVA Y ABOGADOS</h1>
         <p>Estudio de abogados</p>
     </section>
-
+    
+    <!-- Servicios -->
+    <section id="servicios" class="container my-5 text-center">
+        <h2>Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <span class="icon">⚖️</span>
+                <h3>Laboral</h3>
+                <p>Asesoría en derecho laboral para empresas y trabajadores.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon">📑</span>
+                <h3>Tributario</h3>
+                <p>Consultoría en materia de impuestos y regulaciones fiscales.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon">🏛️</span>
+                <h3>Corporativo</h3>
+                <p>Asistencia legal para negocios y sociedades.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ubicación -->
+    <section id="contacto" class="container my-5">
+        <h2>Ubicación</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300px" style="border:0;" allowfullscreen></iframe>
+        </div>
+    </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
