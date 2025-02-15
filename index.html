@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body { font-family: Arial, sans-serif; }
-        .hero { background: url('https://source.unsplash.com/1600x900/?law') no-repeat center center/cover; color: white; padding: 150px 0; text-align: center; }
+        .hero { 
+            background: url('https://source.unsplash.com/1600x900/?law') no-repeat center center/cover; 
+            color: white; 
+            padding: 100px 0; 
+            text-align: center; 
+            margin-bottom: 10px; /* Se redujo el espacio debajo del encabezado */
+        }
         .hero h1 { font-size: 3rem; font-weight: bold; }
         .hero p { font-size: 1.5rem; }
         .nav-custom { background: rgba(0, 0, 0, 0.8); padding: 15px 0; text-align: center; }
         .nav-custom a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.2rem; }
         .nav-custom a:hover { text-decoration: underline; }
-        .service-img { width: 80%; max-width: 180px; height: auto; margin-bottom: 15px; } /* Reducida a 180px */
+        .service-img { width: 100%; max-width: 180px; height: auto; margin-bottom: 15px; }
+        .image-container { margin-top: -30px; } /* Se redujo el espacio arriba de la imagen */
     </style>
 </head>
 <body>
@@ -43,8 +50,8 @@
         <p>Estudio de abogados</p>
     </section>
     
-    <!-- Imagen Adicional -->
-    <section class="container text-center my-4">
+    <!-- Imagen Adicional con menor espacio -->
+    <section class="container text-center my-4 image-container">
         <img src="https://github.com/sebastiansilva19/COORPORACION-PERUANA-DE-ABOGADOS/blob/main/imagen%20tit.png?raw=true" class="img-fluid" alt="Imagen Titular">
     </section>
     
